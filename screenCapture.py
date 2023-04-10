@@ -37,8 +37,14 @@ if __name__=="__main__":
     # remove images from previous gif making
     for fname in glob.glob("output/*.bmp"):
         os.remove(fname)
+    time.sleep(1)
+    print("1")
+    time.sleep(1)
+    print("2")
+    time.sleep(1)
+    print("3")
     # get the screenshots
-    capture(numShots=20,delaySec=1/5,qual=10)
+    capture(numShots=40,delaySec=1/5,qual=10)
     
     images = []
     filenames = os.listdir("output")
